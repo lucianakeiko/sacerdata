@@ -1,0 +1,468 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input, button {
+    outline: 0;
+}
+body { /* ploc */
+    background: #e6e6e6; /* ploc */
+    font-family: 'Raleway', sans-serif;
+    text-rendering: optimizeLegibility !important; /* renderiza a fonte com suavidade  */
+    -webkit-font-smoothing: antialiased !important; /* ploc */
+}
+.content {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 5px 12px;
+}
+header#main-header {
+
+    height: 46px;
+    background:#8ad0ee;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+    position: relative;
+    z-index: 1;
+}
+
+header#main-header .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header#main-header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header#main-header nav ul li {
+    display: flex;
+    align-items: center;
+   
+   font-size: 13px;
+   color: #667580;
+   font-weight: bold;
+   font-family: 'Raleway', sans-serif;
+
+   margin-left: 30px;
+
+}
+header#main-header nav ul li a {
+    display: flex;
+    align-items: center;
+   
+   font-size: 13px;
+   color: #667580;
+   font-weight: bold;
+
+   margin-left: 30px;
+
+}
+
+header#main-header nav ul li img {
+    margin-left: 7px;
+    height: 34px;
+    width: 34px;
+}
+header#main-header div.side {
+    display: flex;
+}
+
+header#main-header div.side input {
+    width: 220px;
+    background: #f5f8fa;
+    border: 1px solid #e6ecf0;
+    height: 34px;
+    padding: 0 40px 0 12px;
+    border-radius: 16px;
+    color: #667681;
+    font-size: 12px;
+    background: url('./images/zoom.svg') no-repeat 180px;
+
+}
+
+header#main-header div.side img {
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    margin: 0 15px;
+}
+header#main-header div.side button {
+    
+    height: 34px;
+    background: #3bb9e3;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+    border:0;
+    border-radius: 16px;
+}
+
+div.banner {
+    height: 50px;
+    width: 100%;
+    background: #FEC876; /* position relative + z-index1 p/ não perder a box shadow*/
+    display: flex;
+    align-items: center;
+    color: rgb(14, 13, 13);
+    font-family: 'Raleway', sans-serif;
+
+}
+
+div.bannerHome {
+    height: 250px;
+    width: 100%;
+    background: #FEC876; /* position relative + z-index1 p/ não perder a box shadow*/
+    display: flex;
+    flex-direction: column;
+    
+    color: rgb(14, 13, 13);
+    font-family: 'Raleway', sans-serif;
+}
+
+div.bannerHome h1 {
+
+    font-family: 'Raleway', sans-serif;
+    color: #3A3C49;
+
+}
+div.bannerHome p {
+
+    font-family: 'Raleway', sans-serif;
+    color: #3A3C49;
+    font-size: medium;
+
+}
+
+div.wrapper-content {
+    display:flex;
+
+}
+
+div.wrapper-content aside.col1 {
+    width: 240px;
+
+}
+div.wrapper-content aside.col1 img.avatar {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-top: -130px;
+
+}
+
+div.wrapper-content aside.col1 h1 {
+    font-size: 16px;
+    color:#11AEEF;
+}
+
+
+div.wrapper-content aside.col1 span {
+    font-size: 16px;
+    color:#0E0D11;
+    margin-top: 7px;
+}
+
+div.wrapper-content aside.col1 p {
+    font-size: 14px;
+    color:#0E0D11;
+    margin-top: 7px;
+}
+div.wrapper-content aside.col1 li {
+    font-size: 14px;
+    margin-top: 7px;
+    color:#0E0D11;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+div.duvidas p {
+    color: black;
+    padding: 5px;
+}
+
+div.titulo  {
+    color: white;
+    height: 100%;
+    width: 100%;
+    font-size: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  
+  div.codigo textarea {
+    width: 95%;
+    height: 350px;
+    color: grey;
+  }
+
+div.ds {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+div.ds p {
+    padding: 5px;
+
+}
+
+div.explica {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div.explica img {
+    height: 50%;
+    width: 50%;
+}
+div.dspag {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    
+}
+div.dspag img {
+    height: 254px;
+    width: 254px;
+}
+div.dspag p {
+    justify-content: center;
+}
+div.pagbox {
+    height: 55%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+}
+div.pagbox p {
+    justify-content: center;
+}
+
+div.separadorPublico{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    padding: 5px 5px ;
+    margin-bottom: 15px;
+    color: #0E0D11;
+    background-color:#FEC876;
+    border-radius: 5%;
+    font-size: x-small;
+}
+div.separadorMacro{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    padding: 5px 5px ;
+    margin-bottom: 15px;
+    color:#fcfeff;
+    background-color: #11AEEF;
+    border-radius: 5%;
+    font-size: x-small;
+}
+
+div.separador{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    padding: 5px 5px ;
+    margin-bottom: 15px;
+    color:#26353E;
+}
+
+div.separador h1 {
+    font-size: 16px;
+}
+div.separador h2 {
+    font-size: 12px;
+}
+
+div.Perguntas{
+    display: flex;
+    flex-direction: row;
+    align-items: row;
+    justify-content: space-center;
+    flex-wrap: wrap;
+    margin: 5px;     
+}
+
+div.Indicadores{
+    display: flex;
+    flex-direction: row;
+    align-items: row;
+    justify-content: space-center;
+    flex-wrap: wrap;
+    margin: 5px;
+      
+}
+
+div.Indicadores span {
+    font-size: 14px;
+    color:red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 10px;
+    
+}
+
+div.box {
+    width: 150px;
+    height: 150px;
+    background: #FEF1CF;
+    margin: 5px;
+    border: 0;
+    border-radius: 13%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+div.box:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+
+div.boxlado {
+    width: 50px;
+    height: 50px;
+    background: #FEF1CF;
+    margin: 5px;
+    border: 0;
+    border-radius: 13%;
+}
+div.Semiarido {
+    background:#BBDEFB;
+}
+
+div.Amazonia {
+     background: #C8E6C9;
+}
+
+div.Compilado {
+    background: #FEF1CF;
+}
+
+
+div.Compilado h1 {
+    color: #6E6F6A;
+  }
+
+  
+div.Andamento {
+    background: red;
+}
+ /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #f1f1f1;
+    border-radius: 15%;
+    margin: 5px;
+
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    
+
+  }
+
+  .flip-card-inner p {
+    color: black;
+    align-items: center;
+    align-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+  }
+  .flip-card-inner a {
+    color: black;
+    font-size: x-small;
+    font-weight: bold;
+
+  }
+
+  .flip-card-inner img {
+    width: 25px;
+    height: 100%25px;
+
+  }
+  
+    /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    border-radius: 15%;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+
+  /* Style the back side */
+  .flip-card-back {
+    background-color: #11AEEF;
+    color: white;
+    transform: rotateY(180deg);
+    font-size: 10px;
+  }
+
+  .alinhamento-central {
+	height: 150px;
+	justify-content: center;
+	align-items: center;
+}
+.alinhamento-central .item {
+	flex: 0;
+    padding: 10px;
+    font-size: 10px;
+}
+
+.alinhamento-central p {
+    font-size: 12px;
+}
