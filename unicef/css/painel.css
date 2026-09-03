@@ -1,0 +1,248 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #f4f8fb;
+  color: #333;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ---------- HEADER ---------- */
+
+header {
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+
+.logo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #00aeef;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 600;
+  font-size: 14px;
+  transition: 0.25s;
+}
+
+.menu a:hover,
+.menu a.active {
+  color: #00aeef;
+}
+
+/* ---------- EMBED ÚNICO ---------- */
+
+.card-header {
+  background: #00aeef;
+  color: #fff;
+  padding: 22px 30px;
+}
+
+.card-header h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.embed-frame {
+  width: 100%;
+  border: 0;
+  display: block;
+  aspect-ratio: 1280 / 3300;
+  height: auto;
+}
+
+/* ---------- HERO (banner fino) ---------- */
+
+.hero {
+  min-height: 168px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  background:
+    linear-gradient(rgba(0, 112, 186, 0.72), rgba(0, 112, 186, 0.58)),
+    url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  line-height: 1.15;
+}
+
+.hero p {
+  max-width: 680px;
+  font-size: 16px;
+  line-height: 1.5;
+  opacity: 0.95;
+}
+
+/* ---------- DASHBOARD ---------- */
+
+.dashboard {
+  width: 100%;
+  max-width: 1280px;
+  margin: -36px auto 48px;
+  padding: 0 20px;
+}
+
+.card {
+  width: 100%;
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+}
+
+.panel-input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.panel-tabs {
+  display: flex;
+  gap: 0;
+  background: #eef6fb;
+  border-bottom: 1px solid #d8e8f2;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.panel-tab {
+  flex: 1 1 0;
+  min-width: max-content;
+  padding: 16px 24px;
+  background: transparent;
+  color: #4a5568;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  border-bottom: 3px solid transparent;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.panel-tab:hover {
+  color: #0070ba;
+  background: rgba(0, 174, 239, 0.06);
+}
+
+.panel-frame {
+  display: none;
+}
+
+.panel-switcher:has(#painel-geral:checked) label[for="painel-geral"],
+.panel-switcher:has(#painel-selo:checked) label[for="painel-selo"],
+.panel-switcher:has(#painel-uniceffers:checked) label[for="painel-uniceffers"],
+.panel-switcher:has(#painel-municipios:checked) label[for="painel-municipios"],
+.panel-switcher:has(#painel-admins:checked) label[for="painel-admins"],
+.panel-switcher:has(#painel-mysql:checked) label[for="painel-mysql"],
+.panel-switcher:has(#painel-pesquisas:checked) label[for="painel-pesquisas"],
+.panel-switcher:has(#painel-keika:checked) label[for="painel-keika"] {
+  color: #0070ba;
+  background: #fff;
+  border-bottom-color: #00aeef;
+}
+
+.panel-switcher:has(#painel-geral:checked) #frame-geral,
+.panel-switcher:has(#painel-selo:checked) #frame-selo,
+.panel-switcher:has(#painel-uniceffers:checked) #frame-uniceffers,
+.panel-switcher:has(#painel-municipios:checked) #frame-municipios,
+.panel-switcher:has(#painel-admins:checked) #frame-admins,
+.panel-switcher:has(#painel-mysql:checked) #frame-mysql,
+.panel-switcher:has(#painel-pesquisas:checked) #frame-pesquisas,
+.panel-switcher:has(#painel-keika:checked) #frame-keika {
+  display: block;
+}
+
+.panel-frame iframe {
+  width: 100%;
+  border: 0;
+  display: block;
+  aspect-ratio: 1280 / 3300;
+  height: auto;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer {
+  background: #003b63;
+  color: #fff;
+  text-align: center;
+  padding: 28px 20px;
+  font-size: 14px;
+}
+
+/* ---------- RESPONSIVO ---------- */
+
+@media (max-width: 900px) {
+  .menu {
+    display: none;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 36px 0;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  .dashboard {
+    margin-top: -24px;
+  }
+
+  .panel-tab {
+    padding: 14px 18px;
+    font-size: 13px;
+  }
+}

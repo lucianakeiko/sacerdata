@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outros · Painel UNICEF</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/unicef/css/painel.css">
+</head>
+<body data-nav-active="outros">
+
+  <header>
+    <div class="container navbar">
+      <a class="logo" href="/unicef/">Painel UNICEF</a>
+      <nav class="menu" id="site-menu" aria-label="Navegação principal"></nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Outros painéis</h1>
+      <p>
+        Acesso a painéis complementares — BAE MYSQL automático, pesquisas e ferramentas internas.
+      </p>
+    </div>
+  </section>
+
+  <section class="dashboard">
+    <div class="card panel-switcher">
+
+      <input class="panel-input" type="radio" name="painel" id="painel-mysql" checked>
+      <input class="panel-input" type="radio" name="painel" id="painel-pesquisas">
+      <input class="panel-input" type="radio" name="painel" id="painel-keika">
+
+      <div class="panel-tabs" role="tablist" aria-label="Painéis complementares">
+        <label class="panel-tab" for="painel-mysql" role="tab">BAE MYSQL (automático)</label>
+        <label class="panel-tab" for="painel-pesquisas" role="tab">Pesquisas</label>
+        <label class="panel-tab" for="painel-keika" role="tab">keika</label>
+      </div>
+
+      <div class="panel-frames">
+        <div class="panel-frame" id="frame-mysql" role="tabpanel">
+          <iframe
+            title="BAE MYSQL automático"
+            src="https://app.powerbi.com/reportEmbed?reportId=13e8a854-3c5a-4181-baf6-2656b28d1ebe&amp;autoAuth=true&amp;ctid=77410195-14e1-4fb8-904b-ab1892023667"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="panel-frame" id="frame-pesquisas" role="tabpanel">
+          <iframe
+            title="Pesquisas — só para Uniceffers"
+            src="https://app.powerbi.com/reportEmbed?reportId=036140cf-0213-4df5-ba2b-ee2259bee3d5&amp;autoAuth=true&amp;ctid=77410195-14e1-4fb8-904b-ab1892023667&amp;language=pt-BR&amp;formatlocale=pt-BR"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="panel-frame" id="frame-keika" role="tabpanel">
+          <div class="card-header">
+            <h2>Me conte sua idéia</h2>
+          </div>
+          <iframe
+            title="keika"
+            src="https://app.powerbi.com/reportEmbed?reportId=13e8a854-3c5a-4181-baf6-2656b28d1ebe&amp;autoAuth=true&amp;ctid=77410195-14e1-4fb8-904b-ab1892023667&amp;language=pt-BR&amp;formatlocale=pt-BR"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    © 2026 • Painel de Monitoramento
+  </footer>
+
+  <script src="/unicef/js/menu.js"></script>
+</body>
+</html>

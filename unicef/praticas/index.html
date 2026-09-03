@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Práticas Pedagógicas · Painel UNICEF</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/unicef/css/painel.css">
+</head>
+<body data-nav-active="praticas">
+
+  <header>
+    <div class="container navbar">
+      <a class="logo" href="/unicef/">Painel UNICEF</a>
+      <nav class="menu" id="site-menu" aria-label="Navegação principal"></nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Práticas Pedagógicas</h1>
+      <p>
+        Acompanhe indicadores, metas e resultados das práticas pedagógicas por perfil de acesso —
+        Uniceffers, municípios e admins — em painéis interativos desenvolvidos em Power BI.
+      </p>
+    </div>
+  </section>
+
+  <section class="dashboard">
+    <div class="card panel-switcher">
+
+      <input class="panel-input" type="radio" name="painel" id="painel-uniceffers" checked>
+      <input class="panel-input" type="radio" name="painel" id="painel-municipios">
+      <input class="panel-input" type="radio" name="painel" id="painel-admins">
+
+      <div class="panel-tabs" role="tablist" aria-label="Perfis de acesso">
+        <label class="panel-tab" for="painel-uniceffers" role="tab">Para Uniceffers</label>
+        <label class="panel-tab" for="painel-municipios" role="tab">Para municípios</label>
+        <label class="panel-tab" for="painel-admins" role="tab">Para admins</label>
+      </div>
+
+      <div class="panel-frames">
+        <div class="panel-frame" id="frame-uniceffers" role="tabpanel">
+          <iframe
+            title="Práticas Pedagógicas — Uniceffers"
+            src="https://app.powerbi.com/reportEmbed?reportId=0c6f11b8-d232-465f-8ef6-e0008d0fb748&amp;autoAuth=true&amp;ctid=77410195-14e1-4fb8-904b-ab1892023667&amp;language=pt-BR&amp;formatlocale=pt-BR"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="panel-frame" id="frame-municipios" role="tabpanel">
+          <iframe
+            title="Práticas Pedagógicas — Municípios"
+            src="https://app.powerbi.com/reportEmbed?reportId=SUBSTITUA_PELO_REPORT_ID_MUNICIPIOS&amp;autoAuth=true&amp;ctid=77410195-14e1-4fb8-904b-ab1892023667&amp;language=pt-BR&amp;formatlocale=pt-BR"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="panel-frame" id="frame-admins" role="tabpanel">
+          <iframe
+            title="Práticas Pedagógicas — Admins"
+            src="https://app.powerbi.com/reportEmbed?reportId=SUBSTITUA_PELO_REPORT_ID_ADMINS&amp;autoAuth=true&amp;ctid=77410195-14e1-4fb8-904b-ab1892023667&amp;language=pt-BR&amp;formatlocale=pt-BR"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    © 2026 • Painel de Monitoramento
+  </footer>
+
+  <script src="/unicef/js/menu.js"></script>
+</body>
+</html>

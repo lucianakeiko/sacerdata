@@ -1,265 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Painel de Monitoramento</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    font-family:'Open Sans',sans-serif;
-    background:#f4f8fb;
-    color:#333;
-}
-
-/* ---------- HEADER ---------- */
-
-header{
-    background:#ffffff;
-    position:sticky;
-    top:0;
-    z-index:1000;
-    box-shadow:0 3px 15px rgba(0,0,0,.08);
-}
-
-.container{
-    width:100%;
-    max-width:1280px;
-    margin:0 auto;
-    padding:0 20px;
-}
-
-.navbar{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    height:80px;
-}
-
-.logo{
-    font-family:'Montserrat',sans-serif;
-    font-size:28px;
-    font-weight:700;
-    color:#00AEEF;
-}
-
-.menu{
-    display:flex;
-    gap:35px;
-}
-
-.menu a{
-    text-decoration:none;
-    color:#444;
-    font-weight:600;
-    transition:.25s;
-}
-
-.menu a:hover{
-    color:#00AEEF;
-}
-
-/* ---------- HERO ---------- */
-
-.hero{
-
-    height:330px;
-
-    display:flex;
-    align-items:center;
-
-    color:white;
-
-    background:
-        linear-gradient(rgba(0,112,186,.70),rgba(0,112,186,.55)),
-        url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80");
-
-    background-size:cover;
-    background-position:center;
-
-}
-
-.hero h1{
-    font-family:'Montserrat';
-    font-size:54px;
-    margin-bottom:20px;
-}
-
-.hero p{
-    max-width:650px;
-    font-size:20px;
-    line-height:1.6;
-}
-
-/* ---------- DASHBOARD ---------- */
-
-.dashboard{
-    width:100%;
-    max-width:1280px;
-    margin:-70px auto 60px;
-    padding:0 20px;
-}
-
-.card{
-    width:100%;
-    background:#fff;
-    border-radius:18px;
-    overflow:hidden;
-    box-shadow:0 20px 60px rgba(0,0,0,.12);
-}
-
-.card-header{
-    background:#00AEEF;
-    color:white;
-    padding:22px 30px;
-}
-
-.card-header h2{
-    font-family:'Montserrat';
-}
-
-iframe{
-    width:100%;
-    border:0;
-    display:block;
-}
-
-/* ---------- FOOTER ---------- */
-
-footer{
-    background:#003b63;
-    color:white;
-    text-align:center;
-    padding:35px;
-    font-size:14px;
-}
-
-/* ---------- RESPONSIVO ---------- */
-
-@media(max-width:900px){
-
-.hero{
-    height:auto;
-    padding:70px 0;
-}
-
-.hero h1{
-    font-size:36px;
-}
-
-.hero p{
-    font-size:18px;
-}
-
-.menu{
-    display:none;
-}
-
-.dashboard{
-    margin-top:-40px;
-}
-
-}
-
-</style>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INDIQUE · Painel UNICEF</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/unicef/css/painel.css">
 </head>
+<body data-nav-active="indique">
 
-<body>
+  <header>
+    <div class="container navbar">
+      <a class="logo" href="/unicef/">Painel UNICEF</a>
+      <nav class="menu" id="site-menu" aria-label="Navegação principal"></nav>
+    </div>
+  </header>
 
-<header>
+  <section class="hero">
+    <div class="container">
+      <h1>INDIQUE</h1>
+      <p>
+        Acompanhe indicadores, metas e resultados do INDIQUE no SELO UNICEF por meio deste painel interativo desenvolvido em Power BI.
+      </p>
+    </div>
+  </section>
 
-<div class="container navbar">
+  <section class="dashboard">
+    <div class="card">
+      <iframe
+        class="embed-frame"
+        title="PD_D3_INDIQUE"
+        src="https://app.powerbi.com/reportEmbed?reportId=aa9886bc-0f5b-4bc4-8d19-2b18034db5ad&amp;autoAuth=true&amp;ctid=77410195-14e1-4fb8-904b-ab1892023667&amp;language=pt-BR&amp;formatlocale=pt-BR"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </section>
 
-<div class="logo">
-Painel UNICEF
-</div>
+  <footer>
+    © 2026 • Painel de Monitoramento
+  </footer>
 
-<nav class="menu">
-<a href="index.html">BAE</a>
-<a href="index.html">BAE</a>
-<a href="bae-mysql.html">BAE MYSQL(automático)</a>
-<a href="bae-selo-mysql.html">(⭐novo) BAE SELO (reta final) </a>
-<a href="praticas.html">Selo  Práticas</a>
-<a href="indique.html">Selo INDIQUE</a>
-<a href="pesquisas.html">Pesquisas</a>
-<a href="keika.html">keika</a>
-</nav>
-</nav>
-
-</div>
-
-</header>
-
-<section class="hero">
-
-<div class="container">
-
-<h1>Painel de Monitoramento - INDIQUE</h1>
-
-<p>
-Acompanhe indicadores, metas e resultados do INDIQUE no SELO UNICEF por meio deste painel interativo desenvolvido em Power BI.
-</p>
-
-</div>
-
-</section>
-
-<section class="dashboard">
-
-<div class="card">
-
-<iframe title="PD_D3_INDIQUE" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=aa9886bc-0f5b-4bc4-8d19-2b18034db5ad&autoAuth=true&ctid=77410195-14e1-4fb8-904b-ab1892023667&language=pt-BR&formatlocale=pt-BR" frameborder="0" allowFullScreen="true"></iframe>
-
-</div>
-
-</section>
-
-<footer>
-
-© 2026 • Painel de Monitoramento
-
-</footer>
-
-<script>
-
-const iframe = document.querySelector("iframe");
-
-function ajustarAltura(){
-
-    // largura atual do iframe
-    const largura = iframe.offsetWidth;
-
-    // tamanho original do relatório
-    const larguraOriginal = 1280;
-    const alturaOriginal = 3300;
-
-    iframe.style.height =
-        (largura * alturaOriginal / larguraOriginal) + "px";
-
-}
-
-window.addEventListener("load", ajustarAltura);
-window.addEventListener("resize", ajustarAltura);
-
-</script>
-
+  <script src="/unicef/js/menu.js"></script>
 </body>
-
 </html>
