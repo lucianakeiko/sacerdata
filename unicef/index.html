@@ -3,57 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BAE · Painel UNICEF</title>
+  <title>Painel UNICEF</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/unicef/css/painel.css">
+  <link rel="stylesheet" href="css/painel.css">
 </head>
-<body data-nav-active="bae">
+<body>
 
   <header>
     <div class="container navbar">
-      <a class="logo" href="/unicef/">Painel UNICEF</a>
+      <a class="logo" href="index.html">Painel UNICEF</a>
       <nav class="menu" id="site-menu" aria-label="Navegação principal"></nav>
     </div>
   </header>
 
   <section class="hero">
     <div class="container">
-      <h1>BAE</h1>
+      <h1>Painéis de Monitoramento</h1>
       <p>
-        Acompanhe indicadores, metas e resultados da BAE — visão geral e Selo UNICEF —
-        em painéis interativos desenvolvidos em Power BI.
+        Selecione abaixo o painel desejado. Cada item leva à visualização interativa em Power BI
+        correspondente ao seu perfil de acesso.
       </p>
     </div>
   </section>
 
   <section class="dashboard">
-    <div class="card panel-switcher">
+    <div class="card panel-catalog">
 
-      <input class="panel-input" type="radio" name="painel" id="painel-geral" checked>
-      <input class="panel-input" type="radio" name="painel" id="painel-selo">
+      <div class="panel-group">
+        <h2 class="panel-group-title">BAE</h2>
+        <p class="panel-group-desc">Indicadores, metas e resultados da Busca Ativa Escolar.</p>
 
-      <div class="panel-tabs" role="tablist" aria-label="Visões da BAE">
-        <label class="panel-tab" for="painel-geral" role="tab">Geral</label>
-        <label class="panel-tab" for="painel-selo" role="tab">Selo</label>
-      </div>
-
-      <div class="panel-frames">
-        <div class="panel-frame" id="frame-geral" role="tabpanel">
-          <iframe
-            title="PD_D2 BAE Geral"
-            src="https://app.powerbi.com/reportEmbed?reportId=e5fea5d9-2102-483b-bf1d-be2c6daec928&amp;autoAuth=true&amp;ctid=77410195-14e1-4fb8-904b-ab1892023667&amp;language=pt-BR&amp;formatlocale=pt-BR"
-            allowfullscreen
-          ></iframe>
+        <div class="panel-row">
+          <a href="bae/index.html#municipios">Para municípios</a>
+          <p class="panel-row-desc">Versão externa da BAE destinada aos municípios parceiros, com dados filtrados para consulta local.</p>
         </div>
 
-        <div class="panel-frame" id="frame-selo" role="tabpanel">
-          <iframe
-            title="BAE SELO — reta final"
-            src="https://app.powerbi.com/reportEmbed?reportId=68ebf802-2e8b-4c42-81e3-61557a7c0d69&amp;autoAuth=true&amp;ctid=77410195-14e1-4fb8-904b-ab1892023667&amp;language=pt-BR&amp;formatlocale=pt-BR"
-            allowfullscreen
-          ></iframe>
+        <div class="panel-row">
+          <a href="bae/index.html#selo">Selo</a>
+          <p class="panel-row-desc">Painel focado na reta final do Selo UNICEF, com metas e indicadores específicos da certificação.</p>
+        </div>
+
+        <div class="panel-row">
+          <a href="bae/index.html#interna">INTERNA (Uniceffers)</a>
+          <p class="panel-row-desc">Visão consolidada da BAE para acompanhamento interno — indicadores gerais, metas e evolução dos resultados.</p>
+        </div>
+      </div>
+
+      <div class="panel-group">
+        <h2 class="panel-group-title">Práticas Pedagógicas</h2>
+        <p class="panel-group-desc">Acompanhamento das práticas pedagógicas por perfil de acesso.</p>
+
+        <div class="panel-row">
+          <a href="praticas/index.html#municipios">Para municípios</a>
+          <p class="panel-row-desc">Painel filtrado para gestores municipais acompanharem as práticas pedagógicas do seu território.</p>
+        </div>
+
+        <div class="panel-row">
+          <a href="praticas/index.html#uniceffers">Para Uniceffers</a>
+          <p class="panel-row-desc">Visão completa para a equipe UNICEF — todos os municípios, indicadores agregados e detalhamento por região.</p>
+        </div>
+
+        <div class="panel-row">
+          <a href="praticas/index.html#admins">Para admins</a>
+          <p class="panel-row-desc">Visão administrativa com dados operacionais e ferramentas de gestão para administradores do sistema.</p>
+        </div>
+      </div>
+
+      <div class="panel-group">
+        <h2 class="panel-group-title">INDIQUE</h2>
+        <p class="panel-group-desc">Indicadores do programa INDIQUE no contexto do Selo UNICEF.</p>
+
+        <div class="panel-row">
+          <a href="indique.html">INDIQUE</a>
+          <p class="panel-row-desc">Acompanhe indicadores, metas e resultados do INDIQUE no Selo UNICEF por meio de painel interativo.</p>
+        </div>
+      </div>
+
+      <div class="panel-group">
+        <h2 class="panel-group-title">Outros</h2>
+        <p class="panel-group-desc">Painéis complementares, pesquisas e ferramentas internas.</p>
+
+        <div class="panel-row">
+          <a href="outros/index.html#mysql">Testes 1</a>
+          <p class="panel-row-desc">Painel BAE MYSQL automático — versão de testes com atualização via base de dados.</p>
+        </div>
+
+        <div class="panel-row">
+          <a href="outros/index.html#pesquisas">Sistema Pesquisas</a>
+          <p class="panel-row-desc">Painel de pesquisas disponível exclusivamente para Uniceffers.</p>
+        </div>
+
+        <div class="panel-row">
+          <a href="outros/index.html#keika">Teste 3</a>
+          <p class="panel-row-desc">Espaço experimental para novas ideias e protótipos de painéis.</p>
         </div>
       </div>
 
@@ -64,6 +108,6 @@
     © 2026 • Painel de Monitoramento
   </footer>
 
-  <script src="/unicef/js/menu.js"></script>
+  <script src="js/menu.js"></script>
 </body>
 </html>

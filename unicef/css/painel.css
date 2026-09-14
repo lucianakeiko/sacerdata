@@ -175,7 +175,7 @@ header {
   display: none;
 }
 
-.panel-switcher:has(#painel-geral:checked) label[for="painel-geral"],
+.panel-switcher:has(#painel-interna:checked) label[for="painel-interna"],
 .panel-switcher:has(#painel-selo:checked) label[for="painel-selo"],
 .panel-switcher:has(#painel-uniceffers:checked) label[for="painel-uniceffers"],
 .panel-switcher:has(#painel-municipios:checked) label[for="painel-municipios"],
@@ -188,7 +188,7 @@ header {
   border-bottom-color: #00aeef;
 }
 
-.panel-switcher:has(#painel-geral:checked) #frame-geral,
+.panel-switcher:has(#painel-interna:checked) #frame-interna,
 .panel-switcher:has(#painel-selo:checked) #frame-selo,
 .panel-switcher:has(#painel-uniceffers:checked) #frame-uniceffers,
 .panel-switcher:has(#painel-municipios:checked) #frame-municipios,
@@ -205,6 +205,69 @@ header {
   display: block;
   aspect-ratio: 1280 / 3300;
   height: auto;
+}
+
+/* ---------- CATÁLOGO (INDEX) ---------- */
+
+.panel-catalog {
+  padding: 8px 0;
+}
+
+.panel-group {
+  padding: 28px 30px;
+  border-bottom: 1px solid #e8eef3;
+}
+
+.panel-group:last-child {
+  border-bottom: none;
+}
+
+.panel-group-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #0070ba;
+  margin-bottom: 6px;
+}
+
+.panel-group-desc {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 4px;
+  line-height: 1.5;
+}
+
+.panel-row {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 12px 28px;
+  padding: 14px 0;
+  border-top: 1px solid #f0f4f8;
+  align-items: start;
+}
+
+.panel-row:first-of-type {
+  margin-top: 12px;
+}
+
+.panel-row a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: #00aeef;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.panel-row a:hover {
+  color: #0070ba;
+  text-decoration: underline;
+}
+
+.panel-row-desc {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.55;
 }
 
 /* ---------- FOOTER ---------- */
@@ -244,5 +307,14 @@ footer {
   .panel-tab {
     padding: 14px 18px;
     font-size: 13px;
+  }
+
+  .panel-group {
+    padding: 22px 20px;
+  }
+
+  .panel-row {
+    grid-template-columns: 1fr;
+    gap: 6px;
   }
 }

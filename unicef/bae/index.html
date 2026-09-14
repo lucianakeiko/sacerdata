@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BAE · Painel UNICEF</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/painel.css">
+</head>
+<body data-nav-active="bae">
+
+  <header>
+    <div class="container navbar">
+      <a class="logo" href="../index.html">Painel UNICEF</a>
+      <nav class="menu" id="site-menu" aria-label="Navegação principal"></nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>BAE</h1>
+      <p>
+        Acompanhe indicadores, metas e resultados da BAE — versão para municípios, Selo UNICEF e visão interna para Uniceffers —
+        em painéis interativos desenvolvidos em Power BI.
+      </p>
+    </div>
+  </section>
+
+  <section class="dashboard">
+    <div class="card panel-switcher">
+
+      <input class="panel-input" type="radio" name="painel" id="painel-municipios" checked>
+      <input class="panel-input" type="radio" name="painel" id="painel-selo">
+      <input class="panel-input" type="radio" name="painel" id="painel-interna">
+
+      <div class="panel-tabs" role="tablist" aria-label="Visões da BAE">
+        <label class="panel-tab" for="painel-municipios" role="tab">Para municípios</label>
+        <label class="panel-tab" for="painel-selo" role="tab">Selo</label>
+        <label class="panel-tab" for="painel-interna" role="tab">INTERNA (Uniceffers)</label>
+      </div>
+
+      <div class="panel-frames">
+        <div class="panel-frame" id="frame-municipios" role="tabpanel">
+          <iframe
+            title="BAE Geral - EXTERNO"
+            src="https://app.powerbi.com/reportEmbed?reportId=13bee486-0bfa-4ac7-a7c6-d5d6f25a8aae&amp;autoAuth=true&amp;ctid=77410195-14e1-4fb8-904b-ab1892023667"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="panel-frame" id="frame-selo" role="tabpanel">
+          <iframe
+            title="BAE SELO — reta final"
+            src="https://app.powerbi.com/reportEmbed?reportId=68ebf802-2e8b-4c42-81e3-61557a7c0d69&amp;autoAuth=true&amp;ctid=77410195-14e1-4fb8-904b-ab1892023667&amp;language=pt-BR&amp;formatlocale=pt-BR"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="panel-frame" id="frame-interna" role="tabpanel">
+          <iframe
+            title="PD_D2 BAE Geral"
+            src="https://app.powerbi.com/reportEmbed?reportId=e5fea5d9-2102-483b-bf1d-be2c6daec928&amp;autoAuth=true&amp;ctid=77410195-14e1-4fb8-904b-ab1892023667&amp;language=pt-BR&amp;formatlocale=pt-BR"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    © 2026 • Painel de Monitoramento
+  </footer>
+
+  <script src="../js/menu.js"></script>
+  <script src="../js/panel-hash.js"></script>
+</body>
+</html>
